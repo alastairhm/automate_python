@@ -12,4 +12,5 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-12 means 12th of Decembe
 ### Added
 
 * Google Map script  [alastairhm](https://github.com/alastairhm)
+* DuckDuck Go Search script  [alastairhm](https://github.com/alastairhm)
 
