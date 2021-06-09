@@ -1,33 +1,20 @@
 #!/usr/bin/env python3
+"""
+Manage download folder
+"""
 
 import os
-import sys
+import yaml
+
+from yaml.loader import SafeLoader
 
 directory = os.getcwd()
-print(directory)
+script_path = os.path.dirname(os.path.abspath(__file__))
 
+with open(os.path.join(script_path, 'mapping.yaml'), 'r') as f:
+    mapping_data = list(yaml.load_all(f, Loader=SafeLoader))
 
-file_folder_mapping = {
-    '.csv':'data',
-    '.dmg':'bundles',
-    '.docx':'documents',
-    '.gif':'images',
-    '.gz':'bundles',
-    '.iso':'iso',
-    '.jpeg':'images',
-    '.jpg':'images',
-    '.json':'data',
-    '.mkv':'videos',
-    '.mp3':'audio',
-    '.mp4':'videos',
-    '.pdf':'pdfs',
-    '.png':'images',
-    '.txt':'documents',
-    '.xlsx':'data',
-    '.xml':'data',
-    '.yaml':'data',
-    '.zip':'bundles',
-}
+file_folder_mapping = mapping_data[0]
 
 for filename in os.listdir(directory):
     f = os.path.join(directory, filename)
@@ -35,7 +22,7 @@ for filename in os.listdir(directory):
         ext = os.path.splitext(f)
         if ext[1] != '':
             print(os.path.basename(f))
-            sub_directory = file_folder_mapping.get(ext[1].lower(),"misc")
+            sub_directory = file_folder_mapping.get(ext[1].lower(), "misc")
             if not os.path.exists(sub_directory):
                 os.makedirs(sub_directory)
-            os.rename(f,os.path.join(sub_directory,f))
+            os.rename(f, os.path.join(sub_directory, f))

@@ -1,0 +1,21 @@
+---
+.csv: data
+.dmg: bundles
+.docx: documents
+.gif: images
+.gz: bundles
+.iso: iso
+.jpeg: images
+.jpg: images
+.json: data
+.mkv: videos
+.mp3: audio
+.mp4: videos
+.pdf: pdfs
+.png: images
+.txt: documents
+.xlsx: data
+.xml: data
+.yaml: data
+.zip: bundles
+
