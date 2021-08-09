@@ -2,17 +2,23 @@
 
 import pyperclip
 import time
-import datetime
+import yaml
+from yaml.loader import SafeLoader
 
 cliptext = ""
+clip_array = []
+with open("/Users/alastair.montgomery/gitrp/notes/clip.yml", "r") as f:
+    clip_array = list(yaml.load_all(f, Loader=SafeLoader))
+    clip_array = sum(clip_array, [])
+
 while True:
     tmptext = pyperclip.paste()
     if tmptext != cliptext:
-        now = datetime.datetime.now()
         cliptext = tmptext
-        with open("/Users/alastair.montgomery/gitrp/notes/clip.txt", "r+") as f:
-            content = f.read()
-            f.seek(0)
-            f.write(now.strftime('%Y-%m-%d %H:%M:%S') + " : " +cliptext + "\n" + "----------\n" + content)
+        if cliptext not in clip_array:
+            clip_array.insert(0,tmptext)
+            if len(clip_array) > 100:
+                clip_array.pop()
+            with open("/Users/alastair.montgomery/gitrp/notes/clip.yml", "w") as f:
+                f.write(yaml.dump(clip_array))
     time.sleep(1)
-
