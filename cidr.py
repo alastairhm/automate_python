@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+'''Convert CIDR to IP Range'''
+
 import ipaddress
 import argparse
 
