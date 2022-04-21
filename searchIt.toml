@@ -1,0 +1,4 @@
+engine = "duckduck"
+bing = "https://bing.com/search?q="
+duckduck = "https://duckduckgo.com/?q="
+google = "https://www.google.com/search?q="
