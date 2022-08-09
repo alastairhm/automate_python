@@ -9,7 +9,7 @@ import toml
 
 script_path = os.path.dirname(os.path.abspath(__file__))
 settings = toml.load(os.path.join(script_path, "searchIt.toml"))
-engine = settings["engine"]
+engine = settings["default"]
 search_url = settings[engine]
 
 if len(sys.argv) > 1:
