@@ -1,4 +1,3 @@
----
 .csv: data
 .dmg: bundles
 .docx: documents
@@ -20,5 +19,3 @@
 .zip: bundles
 .lha: bundles
 .7z: bundles
-
-
