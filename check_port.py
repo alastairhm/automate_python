@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
-'''Check Port is Open'''
+"""Check Port is Open"""
 
 import socket
 import argparse
 
+
 def check_port(address, port):
-    '''Check Port is open'''
+    """Check Port is open"""
 
     a_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -19,9 +20,9 @@ def check_port(address, port):
         print("Port is not open")
 
 
-parser = argparse.ArgumentParser(description='Port Checker')
-parser.add_argument("-a","--address",type=str,help="Address", default="localhost")
-parser.add_argument("-p","--port",type=int,help="Port Number", default=8080)
+parser = argparse.ArgumentParser(description="Port Checker")
+parser.add_argument("-a", "--address", type=str, help="Address", default="localhost")
+parser.add_argument("-p", "--port", type=int, help="Port Number", default=8080)
 args = parser.parse_args()
 
 check_port(args.address, args.port)
