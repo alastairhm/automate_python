@@ -18,4 +18,7 @@
 .xml: data
 .yaml: data
 .zip: bundles
+.lha: bundles
+.7z: bundles
+
 
