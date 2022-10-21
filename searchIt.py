@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''Quick searching from command line'''
+"""Quick searching from command line"""
 
 import webbrowser
 import sys

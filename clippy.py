@@ -23,7 +23,7 @@ while True:
     if tmptext != cliptext:
         cliptext = tmptext
         if cliptext not in clip_array:
-            clip_array.insert(0,tmptext)
+            clip_array.insert(0, tmptext)
             if len(clip_array) > max_size:
                 clip_array.pop()
             with open(history, "w") as f:
