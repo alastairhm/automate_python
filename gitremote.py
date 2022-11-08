@@ -10,7 +10,8 @@ args = parser.parse_args()
 
 raw_url = args.address
 if raw_url.startswith("git"):
-    url = args.address.split("@")[1].replace(":","/")
+    url = "https://" + args.address.split("@")[1].replace(":","/")
 else:
     url = raw_url
 webbrowser.open(url)
+
