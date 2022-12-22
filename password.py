@@ -21,8 +21,11 @@ parser.add_argument("-c", "--clipboard", action="store_true")
 parser.add_argument("-s", "--special", action="store_true")
 args = parser.parse_args()
 
+buffer = []
 for i in range(args.number):
     pword = get_password(args.length, args.special)
-    print(pword)
-    if args.clipboard:
-        pyperclip.copy(pword)
+    buffer.append(pword)
+for password in buffer:
+    print(password)
+if args.clipboard:
+    pyperclip.copy("\n".join(buffer))
