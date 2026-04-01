@@ -7,7 +7,7 @@ Kivy-examples==2.0.0
 Kivy-Garden==0.1.4
 Pillow==12.1.1
 pygame==2.0.1
-Pygments==2.15.0
+Pygments==2.20.0
 PyYAML==5.4.1
 requests==2.33.0
 urllib3==2.6.3
