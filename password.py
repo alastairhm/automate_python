@@ -14,7 +14,7 @@ class Password:
         self.length = length
         self.special = special
         self.buffer = []
-        for i in range(self.number):
+        for _ in range(self.number):
             self.buffer.append(self.get_password())
 
     def get_password(self):
@@ -23,7 +23,7 @@ class Password:
             alphabet = string.ascii_letters + string.digits + string.punctuation
         else:
             alphabet = string.ascii_letters + string.digits
-        password = "".join(secrets.choice(alphabet) for i in range(self.length))
+        password = "".join(secrets.choice(alphabet) for _ in range(self.length))
         return password
 
     def get_string(self):
