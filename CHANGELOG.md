@@ -16,3 +16,8 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-12 means 12th of Decembe
 * Download folder manager [alastairhm](https://github.com/alastairhm)
 * Clipboard recorder script [alastairhm](https://github.com/alastairhm)
 
+### Security
+
+* Bump idna from 3.7 to 3.19 in /kivy, resolving GHSA-65pc-fj4g-8rjx [alastairhm](https://github.com/alastairhm)
+* Bump urllib3 from 2.6.3 to 2.7.0 in /kivy, resolving GHSA-qccp-gfcp-xxvc and GHSA-mf9v-mfxr-j63j [alastairhm](https://github.com/alastairhm)
+
