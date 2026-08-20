@@ -21,3 +21,7 @@ Scripts created from [AUTOMATE THE BORING STUFF WITH PYTHON](https://automatethe
 * **python_fire/** - examples of the [`fire`](https://github.com/google/python-fire) CLI library (`hello.py`, `hello2.py`, `calc.py`)
 * **kivy/** - a minimal [Kivy](https://kivy.org/) app experiment (`test.py`)
 * **archive/** - holding place for retired scripts (currently empty)
+
+## On the blog
+
+* https://blog.0x32.co.uk/posts/cliphistory/
