@@ -19,7 +19,7 @@ Scripts created from [AUTOMATE THE BORING STUFF WITH PYTHON](https://automatethe
 ## Subdirectories
 
 * **python_fire/** - examples of the [`fire`](https://github.com/google/python-fire) CLI library (`hello.py`, `hello2.py`, `calc.py`)
-* **kivy/** - a minimal [Kivy](https://kivy.org/) app experiment (`test.py`)
+* **kivy/** - a minimal [Kivy](https://kivy.org/) app experiment (`test.py`), with a sample clipboard history in `clip.yml`
 * **archive/** - holding place for retired scripts (currently empty)
 
 ## On the blog
