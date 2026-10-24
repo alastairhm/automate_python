@@ -20,4 +20,7 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-12 means 12th of Decembe
 
 * Bump idna from 3.7 to 3.19 in /kivy, resolving GHSA-65pc-fj4g-8rjx [alastairhm](https://github.com/alastairhm)
 * Bump urllib3 from 2.6.3 to 2.7.0 in /kivy, resolving GHSA-qccp-gfcp-xxvc and GHSA-mf9v-mfxr-j63j [alastairhm](https://github.com/alastairhm)
+* Bump Pillow from 12.3.0 to 13.0.0 in /kivy, resolving 41 Dependabot alerts (5 critical) [alastairhm](https://github.com/alastairhm)
+* Bump urllib3 from 2.7.0 to 2.8.0 in /kivy, resolving 3 Dependabot alerts [alastairhm](https://github.com/alastairhm)
+* Bump certifi from 2024.7.4 to 2026.10.23 in /kivy, removing compromised emSign root CAs [alastairhm](https://github.com/alastairhm)
 
