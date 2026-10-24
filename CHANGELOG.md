@@ -19,6 +19,7 @@ Dates in this file are in format of YYYY-MM-DD (2019-12-12 means 12th of Decembe
 ### Changed
 
 * Bump Kivy and Kivy-examples from 2.0.0 to 2.3.1 in /kivy, plus Kivy-Garden 0.1.5, pygame 2.6.1 and PyYAML 6.0.3, so the requirements install on Python 3.12 [alastairhm](https://github.com/alastairhm)
+* kivy/test.py now loads a sample `clip.yml` from its own folder instead of a hardcoded macOS path [alastairhm](https://github.com/alastairhm)
 
 ### Security
 

@@ -1,3 +1,4 @@
+import os
 import yaml
 from kivy.app import App
 from kivy.uix.button import Button
@@ -8,7 +9,8 @@ class TestApp(App):
         return Button(text='Hello World')
 
 clip_array = []
-with open("/Users/alastair.montgomery/gitrp/notes/clip.yml", "r") as f:
+script_path = os.path.dirname(os.path.abspath(__file__))
+with open(os.path.join(script_path, "clip.yml"), "r") as f:
     clip_array = list(yaml.load_all(f, Loader=SafeLoader))
     clip_array = sum(clip_array, [])
 TestApp().run()
